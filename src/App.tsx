@@ -1,19 +1,3 @@
-import React, { useEffect } from 'react';
-import './App.css';
-import { getLocations } from './services/locations.service';
+import { Home } from './pages/Home';
 
-function App() {
-  useEffect(() => {
-   (async () => {
-    const res = await getLocations()
-    console.log(res.data.locations)
-   })()
-  }, [])
-  return (
-    <div className="App">
-      Confidence System
-    </div>
-  );
-}
-
-export default App;
+export const App = () => <Home />;
