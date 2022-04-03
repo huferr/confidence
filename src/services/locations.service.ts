@@ -1,10 +1,10 @@
-import { IResponse } from "../typings/response";
+import { Location } from "../typings/location";
 import { api } from "./api";
 
-export const getLocations = async (): Promise<IResponse> => {
+export const getLocations = async (): Promise<Location[]> => {
 	try {
 	  const response = await api.get('/confidence/locations')
-		return response;
+		return response.data.locations;
 	} catch (error: any) {
 		return error;
 	}

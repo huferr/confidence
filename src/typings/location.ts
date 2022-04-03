@@ -19,11 +19,3 @@ export interface Location {
 	numberofDevices: number,
 	subscriptionActive: boolean,
 }
-
-
-export interface IResponse {
-	data: {
-		locations: Location[],
-		numberOfLocations: number,
-	}
-}
