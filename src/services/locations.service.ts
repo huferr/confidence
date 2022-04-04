@@ -1,10 +1,10 @@
-import { Location } from "../typings/location";
-import { api } from "./api";
+import axios from "axios";
+import { IResponse } from "../typings/response";
 
-export const getLocations = async (): Promise<Location[]> => {
+export const getLocations = async (): Promise<IResponse> => {
 	try {
-	  const response = await api.get('/confidence/locations')
-		return response.data.locations;
+	  const response = await axios.get('https://6246bd8e739ac8459191f7d5.mockapi.io/v2/confidence/locations')
+		return response;
 	} catch (error: any) {
 		return error;
 	}
