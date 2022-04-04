@@ -11,26 +11,26 @@ export const LocationCard = ({ location }: LocationCardProps) => {
 	return (
 		<div className="container">
 			<div className="name-wrapper">
-				<h1>{locationName}</h1>
+				<h1 aria-label="location-name">{locationName}</h1>
 			</div>
 
 			<div className="bottom-content">
-				<div className="type-wrapper">
+				<div className="type-wrapper" aria-label="location-type-div">
 					<LocationTypeIcon />
-					<p>{locationType}</p>
+					<p aria-label="location-type">{locationType}</p>
 				</div>
 
 				{locationDetails ? (
-					<div className="details-wrapper">
+					<div className="details-wrapper" aria-label="location-details-div">
 						<LocationDetailsIcon />
-						<p>{locationDetails}</p>
+						<p aria-label="location-details">{locationDetails}</p>
 					</div>
 				) : null
 				}
 
-				<div className="address-wrapper">
+				<div className="address-wrapper" aria-label="location-address-div">
 					<LocationAddressIcon />
-					<p>{address.addressLine1}, {address.city}, {address.state} {address.zip}</p>
+					<p aria-label="location-address">{address.addressLine1}, {address.city}, {address.state} {address.zip}</p>
 				</div>
 			</div>
 		</div>
