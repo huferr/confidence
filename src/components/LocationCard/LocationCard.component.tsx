@@ -1,7 +1,5 @@
 import { Location } from "../../typings/response";
-import { LocationAddressIcon } from '../../assets/icons/LocationAddressIcon'
-import { LocationTypeIcon } from "../../assets/icons/LocationTypeIcon";
-import { LocationDetailsIcon } from "../../assets/icons/LocationDetailsIcon";
+import { LocationAddressIcon, LocationTypeIcon, LocationDetailsIcon } from '../../assets/icons/'
 import './LocationCard.styles.css'
 
 interface LocationCardProps {

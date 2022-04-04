@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getLocations } from '../../services';
 import { LocationCard, Header } from '../../components';
-import { Location } from '../../typings/response';
+import { Location } from '../../typings';
 import { splitArrayBy } from '../../helpers';
 import './Home.styles.css'
 
