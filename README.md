@@ -2,6 +2,7 @@
 
 How to run the app:
 
-1. Clone this repository to your local machine;
-2. Inside the root folder e.g. `my-projects/confidence`, use the Terminal to run `npm i` to install all the needed dependencies;
-3. `npm start` to run the app in your localhost.
+1. Clone this repository in to your local machine: `$ git clone https://github.com/huferr/confidence.git`;
+2. Run `cd confidence` to go to the project folder;
+3. Run `npm i` to install all the needed dependencies;
+4. `npm start` to run the app in your localhost.
