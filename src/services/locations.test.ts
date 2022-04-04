@@ -35,4 +35,11 @@ it('Should return a location object', async () => {
   expect(res).toEqual(resultParsed);
 });
 
+it('Should throw an error', async () => {
+  mockedAxios.get.mockImplementation(() => Promise.reject(new Error('Network Error')));
+
+  const res = await getLocations();
+  expect(res).toStrictEqual(Error('Network Error'));
+});
+
 
