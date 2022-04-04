@@ -1,4 +1,4 @@
-import { Location } from "../../typings/location";
+import { Location } from "../../typings/response";
 import { LocationAddressIcon } from '../../assets/icons/LocationAddressIcon'
 import { LocationTypeIcon } from "../../assets/icons/LocationTypeIcon";
 import { LocationDetailsIcon } from "../../assets/icons/LocationDetailsIcon";
@@ -27,9 +27,9 @@ export const LocationCard = ({ location }: LocationCardProps) => {
 						<LocationDetailsIcon />
 						<p>{locationDetails}</p>
 					</div>
-					) : null
+				) : null
 				}
-					
+
 				<div className="address-wrapper">
 					<LocationAddressIcon />
 					<p>{address.addressLine1}, {address.city}, {address.state} {address.zip}</p>
