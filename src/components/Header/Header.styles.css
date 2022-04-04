@@ -12,3 +12,13 @@ header {
 .logo {
 	width: 181px;
 }
+
+@media screen and (max-width: 650px) {
+	header {
+		justify-content: center;
+	}
+
+	h2 {
+		display: none;
+	}
+}
