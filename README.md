@@ -12,7 +12,9 @@ How to run the app:
 
 
 
-https://user-images.githubusercontent.com/83189576/161597239-9cbfe947-dc6d-4e3f-820c-ac9664d417c7.mp4
+
+https://user-images.githubusercontent.com/83189576/161841935-60098f64-3428-460f-9a2c-8df3d17961f2.mp4
+
 
 
 
@@ -24,9 +26,6 @@ https://user-images.githubusercontent.com/83189576/161597239-9cbfe947-dc6d-4e3f-
 
 #### LocationCard Component Test Suite
 <img width="376" alt="image" src="https://user-images.githubusercontent.com/83189576/161588835-04fec3d7-994c-48d2-b451-d0f6dd4f1641.png">
-
-#### splitArrayBy fn Test Suite
-<img width="376" alt="image" src="https://user-images.githubusercontent.com/83189576/161589149-b387f1a5-9b2f-49a1-94f0-f071ef829071.png">
 
 #### All project tests
 <img width="376" alt="image" src="https://user-images.githubusercontent.com/83189576/161588692-2896189a-8f5d-442e-b807-28086c48def3.png">
