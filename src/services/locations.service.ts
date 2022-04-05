@@ -1,12 +1,20 @@
 import axios from "axios";
 import { IResponse } from "../typings/response";
 
-export const getLocations = async (): Promise<IResponse> => {
+export const getLocations = async (page: number): Promise<IResponse> => {
 	try {
-	  const response = await axios.get('https://6246bd8e739ac8459191f7d5.mockapi.io/v2/confidence/locations')
+	  const response = await axios.post('/confidence/locations', {
+		  "start": page,
+		  "limit": 3
+		}, {
+			headers: {
+				'cache-control': 'no-cache',
+        'content-type': 'application/json',
+        'username': 'amitphatak$r5labs.com'
+			}
+		})
 		return response;
 	} catch (error: any) {
 		return error;
 	}
 }
-
