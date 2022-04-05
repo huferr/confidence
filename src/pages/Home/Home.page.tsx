@@ -38,7 +38,6 @@ export const Home = () => {
   return (
     <>
       <Header />
-      {console.log(locations)}
       <main>
         {locations.map((loc, index) => ( 
           <section key={index}>

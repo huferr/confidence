@@ -14,6 +14,7 @@ section {
   height: 100vh;
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -22,10 +23,10 @@ h3 {
 	margin: 20px;
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1280px) {
 
 	section {
-		height: 100vh;
+		min-height: 100vh;
 		margin: 50px 0;
 		justify-content: center;
 		flex-wrap: nowrap;
