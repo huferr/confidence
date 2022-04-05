@@ -70,7 +70,7 @@ const resultParsed = [{
 
   
 
-it('Should return a location object', async () => {
+it('Should return an array with only the first 3 location objects', async () => {
   mockedAxios.post.mockImplementation(() => Promise.resolve(resultParsed));
 
   const res = await getLocations(0);
